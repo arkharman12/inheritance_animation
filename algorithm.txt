@@ -1,0 +1,28 @@
+Harmanjot Singh
+Professor Andrew Harris
+Computing II
+16 November 2018
+
+					Inheritance Animation Algorithm
+
+•Goals - The main goal of this program is to create and view simple animations in ASCII.
+
+•Input - The programs will receive inputs from the user according to what they are trying to create with the program. 
+
+•Output - Outputs will depend on what user have entered in the program but it will be some kind of ASCII animation. 
+
+
+•Steps - class AsciiCanvas{}:
+	1.Inside the AsciiCanvas class, create two new private linked lists; currentNode and head.
+	2.Create a AsciiCanvas contructor which will create an instance of AsciiCanvas with monospaced font and line wrapping.
+	3.Make a method name prevFrame. Inside this function, make sure to save the frame when user clicks the previous button. Also, make an if else statement which will doesn’t do anything if we are at 	the beginning of the linked list and in the else part load the previous node with text.
+	4.Make a method name nextFrame. Inside this function, make sure to save the frame when user clicks the next button. Also, make an if else statement which will return null if we are at the end of 	the linked list and in the else part access the node of the linked list with text.
+	5.Make a method name save. Inside this function, make sure to save the frame when user clicks the save button. Also, make a try catch block which will try to save the file as “asciianim.ser” in 	the current directory otherwise catch the error if anything went wrong. 
+	6.Make a method name load. Inside this function, make a try catch block which will try to load the file “asciianim.ser” in the current directory and catch the error in the catch if we couldn’t 	load the file.
+	7.Make a method name anim. Inside this function, make sure to save the frame when user clicks the anim button. Also, make an if else statement which will start us at the beginning if we are at the 	end of the list otherwise it will move the current node pointer to the next frame and update the text area with the new frame’s text. 
+
+class Node{}:
+	1.Inside the Node class, start by creating private variables for previous and next element. Also, create a private variable ascii frame text. 
+	2.Then, make a setter and getter method for previous linked list.
+	3.Make a setter and getter method for next linked list.
+	4.Finally, make a setter and getter method for ascii frame text.
